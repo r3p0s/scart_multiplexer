@@ -1,0 +1,85 @@
+[b]Esquemas[/b]
+
+[b]Placa madre[/b]
+[url=https://raw.githubusercontent.com/r3p0s/scart_multiplexer/main/0.06/schematics/SCART_multiplexer_0.06_print_0.png][img]https://raw.githubusercontent.com/r3p0s/scart_multiplexer/main/0.06/schematics/SCART_multiplexer_0.06_print_0.th.png[/img][/url]
+
+[b]Microcontrolador[/b]
+[url=https://raw.githubusercontent.com/r3p0s/scart_multiplexer/main/0.06/schematics/SCART_multiplexer_0.06_print_1.png][img]https://raw.githubusercontent.com/r3p0s/scart_multiplexer/main/0.06/schematics/SCART_multiplexer_0.06_print_1.th.png[/img][/url]
+
+[b]Regulador +5VDC[/b]
+[url=https://raw.githubusercontent.com/r3p0s/scart_multiplexer/main/0.06/schematics/SCART_multiplexer_0.06_print_8.png][img]https://raw.githubusercontent.com/r3p0s/scart_multiplexer/main/0.06/schematics/SCART_multiplexer_0.06_print_8.th.png[/img][/url]
+
+[b]Teclado[/b]
+[url=https://raw.githubusercontent.com/r3p0s/scart_multiplexer/main/0.06/schematics/SCART_multiplexer_0.06_print_11.png][img]https://raw.githubusercontent.com/r3p0s/scart_multiplexer/main/0.06/schematics/SCART_multiplexer_0.06_print_11.th.png[/img][/url]
+
+[b]DAC 4-bits[/b] (para la detección de las placas hijas)
+[url=https://raw.githubusercontent.com/r3p0s/scart_multiplexer/main/0.06/schematics/SCART_multiplexer_0.06_print_10.png][img]https://raw.githubusercontent.com/r3p0s/scart_multiplexer/main/0.06/schematics/SCART_multiplexer_0.06_print_10.th.png[/img][/url]
+
+[b]Conector para placa hija[/b]
+[url=https://raw.githubusercontent.com/r3p0s/scart_multiplexer/main/0.06/schematics/SCART_multiplexer_0.06_print_2.png][img]https://raw.githubusercontent.com/r3p0s/scart_multiplexer/main/0.06/schematics/SCART_multiplexer_0.06_print_2.th.png[/img][/url]
+
+[b]Placa hija[/b]
+[url=https://i.postimg.cc/MpBn39HM/Daughterboard-0-05-print-0.png][img]https://i.postimg.cc/TKR2pqrf/Daughterboard-0-05-print-0.png[/img][/url]
+
+[b]Lista de componentes[/b]
+
+[u][b]Placa madre[/b][/u] (63)
+|Cantidad|Referencia|Valor|Formato|
+|:-|:-|:-|:-|
+|4|R1,R2,R3,R4|330Ω 1/4W 1%|0805|
+|3|RN2,RN5,RN7|10kΩ 1/4W 1%|0603|
+|4|RN1,RN3,RN4,RN6|20kΩ 1/4W 1%|0603|
+|2|C1,C2|100nF 50V|0805|
+|2|C3,C6|22pF 50V|0805|
+|2|C4,C5|10µF 25V|0805|
+|1|D1|PWR [RED]|LED 0805 RED|
+|1|D2|VID/RGB|0603 Dual LED CACA RED/BLUE|
+|1|SW1|RESET|Switch SPST C&K RS282G05A3|
+|1|U2|AMS1117-5.0|SOT-223|
+|2|Z1,Z2|SMAZ5V1|SMA|
+|1|Y1|XTAL 16MHz|HC49US|
+|1|Q1|DMP6180SK3-13|TO-252-2|
+|1|J4|POWER|microUSB 5 pines SMD|
+|1|U1|MCU|Zócalo de agujero redondo DIP-28N|
+|1|LCD1|LCD2004_I2C|Pines hembra 1x04 2.54mm.|
+|1|J1|I2C|Pines macho 1x05 2.54mm. (opcional)|
+|1|J2|ICSP|Pines macho 2x03 2.54mm. (opcional)|
+|6|J7,J8,J9,J10,J11,J12|SCART-IN#1-6|Pines macho 2x10 2.54mm.⁽¹⁾|
+|1|SW2|◀|Push tactile switches SPST 6x6x4.3mm ó C&K TLSMDT3C020GLFS|
+|1|SW3|▶|Push tactile switches SPST 6x6x4.3mm ó C&K TLSMDT3C020GLFS|
+|1|SW4|VID/RGB|Switch DPDT SS-22D07|
+|1|J3|POWER|Jack de barril hembra Wuerth 6941xx301002|
+|1|J5|AUDIO IN|Jack hembra audio 3.5mm. PJ307|
+|1|J6|AUDIO OUT|Jack hembra audio 3.5mm. PJ307|
+|1|J13|SCART-OUT|SCART hembra 180º|
+|1|U1|MCU|ATMega328P DIP-28N|
+|1|LCD1|LCD2004_I2C|Pantalla LCD2004|
+|12|H1-H34|H1-H34|Tornillo de nylon M3 6mm negro|
+|6|H1-H34|H1-H34|Espaciador de nylon M3 12mm negro ⁽²⁾|
+[url=https://htmlpreview.github.io/?https://github.com/r3p0s/scart_multiplexer/blob/main/0.06/bom/SCART_multiplexer_MB_0.06.iBOM.html]Lista de componentes interactiva[/url]
+
+[u][b]Placa hija[/b][/u] (21)
+|Cantidad|Referencia|Valor|Formato|
+|:-|:-|:-|:-|
+|2|R1,R2|330Ω|0805|
+|1|R3|20kΩ|0805|
+|1|R4|10kΩ|0805|
+|1|C1|100nF|0805|
+|1|D1|SEL|0603 Dual LED CACA RED/BLUE|
+|1|U1|QS3244SOG|SOIC-20|
+|1|J2|Daughterboard|Pines macho 2x10 2.54mm.⁽³⁾|
+|1|J1|SCART-IN|SCART hembra 180º|
+|8|H1-H34|H1-H34|Tornillo de nylon M3 6mm negro|
+|4|H1-H34|H1-H34|Espaciador de nylon M3 12mm negro ⁽²⁾|
+[url=https://htmlpreview.github.io/?https://github.com/r3p0s/scart_multiplexer/blob/main/0.06/bom/SCART_multiplexer_DB_0.06.iBOM.html]Lista de componentes interactiva[/url]
+
+⁽¹⁾ La fila 3 no debe tener pines.
+⁽²⁾ Comprobar altura de placas hijas y pantalla LCD2004
+⁽³⁾ La fila 3 debe estar bloqueada.
+
+[b]PCB:[/b]
+[url=https://raw.githubusercontent.com/r3p0s/scart_multiplexer/main/0.06/images/01._3d_DB_0.06.png][img]https://raw.githubusercontent.com/r3p0s/scart_multiplexer/main/0.06/images/01._3d_DB_0.06.th.png[/img][/url] [url=https://raw.githubusercontent.com/r3p0s/scart_multiplexer/main/0.06/images/02._3d_MB_0.06.png][img]https://raw.githubusercontent.com/r3p0s/scart_multiplexer/main/0.06/images/02._3d_MB_0.06.th.png[/img][/url] [url=https://raw.githubusercontent.com/r3p0s/scart_multiplexer/main/0.06/images/03._3d_MB_0.06.png][img]https://raw.githubusercontent.com/r3p0s/scart_multiplexer/main/0.06/images/03._3d_MB_0.06.th.png[/img][/url] [url=https://raw.githubusercontent.com/r3p0s/scart_multiplexer/main/0.06/images/04._top-components_MB_0.06.png][img]https://raw.githubusercontent.com/r3p0s/scart_multiplexer/main/0.06/images/04._top-components_MB_0.06.th.png[/img][/url] [url=https://raw.githubusercontent.com/r3p0s/scart_multiplexer/main/0.06/images/05._bottom-components_MB_0.06.png][img]https://raw.githubusercontent.com/r3p0s/scart_multiplexer/main/0.06/images/05._bottom-components_MB_0.06.th.png[/img][/url]
+
+[b]Gerbers:[/b]
+[url=https://github.com/r3p0s/scart_multiplexer/raw/main/0.06/gerbers/SCART_multiplexer_MB_0.06.zip]Placa madre[/url] (305.6KiB)
+[url=https://github.com/r3p0s/scart_multiplexer/raw/main/0.06/gerbers/SCART_multiplexer_DB_0.06.zip]Placa hija[/url] (212.9KiB)

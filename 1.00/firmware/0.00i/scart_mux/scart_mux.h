@@ -83,7 +83,7 @@ Adafruit_SH1106 display(OLED_RESET);
 #define ENCODER_CLK_PIN                           2 // Encoder CLK pin
 #define ENCODER_DT_PIN                            3 // Encoder DT pin
 #define ENCODER_SW_PIN                            4 // Encoder SW pin
-#undef  ENCODER_REVERSE                             // Reverse encoder rotation
+#define ENCODER_REVERSE                             // Reverse encoder rotation
 #define ENCODER_THRESHOLD                         0 // Encoder sensitivity [0-...] (0=Max.sensitivity)
 #define ENCODER_BOUNCE                          200 // Encoder anti-bounce (ms)
 

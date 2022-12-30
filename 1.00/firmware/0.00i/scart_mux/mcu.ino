@@ -166,7 +166,7 @@ static void updateSlots()
   while ( bDAC < DACS && bSlot <= SCART_MUX_SLOTS )
   {
 
-    wP = pow2[DAC_SHIFT+DAC_REVERSE*bDAC];
+    wP = awPow2[DAC_SHIFT+DAC_REVERSE*bDAC];
 
     // DAC sampling
     iDACvalue = 1024;

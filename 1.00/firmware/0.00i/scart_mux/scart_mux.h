@@ -132,7 +132,7 @@ const byte                                          // DAC inputs order
   };
 
 const word
-  pow2[10] = {                                      // Powers of 2 for 10-bit ADC decoding
+  awPow2[10] = {                                    // Powers of 2 for 10-bit ADC decoding
     1, 2, 4, 8, 16, 32, 64, 128, 256, 512
   };
 
